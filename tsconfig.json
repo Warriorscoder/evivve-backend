@@ -50,27 +50,18 @@
 
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "ESNext",
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "rootDir": "./src",
     "outDir": "./dist",
     "esModuleInterop": true,
     "strict": true,
     "skipLibCheck": true,
-    "allowImportingTsExtensions": false,
-    "moduleResolution": "Bundler",
-
-    // Output
-    "sourceMap": true,
-    "declaration": true,
-    "declarationMap": true,
-
-    // TypeScript behavior
-    "noUncheckedIndexedAccess": true,
-    "exactOptionalPropertyTypes": true,
-    "jsx": "react-jsx",
-    "isolatedModules": false
+    "resolveJsonModule": true,
+    "types": ["node"],
+    "sourceMap": true
   },
-  "include": ["src/**/*"],
+  "include": ["src"],
   "exclude": ["node_modules"]
 }
