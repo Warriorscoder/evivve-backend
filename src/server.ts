@@ -6,6 +6,9 @@ import { Server as SocketIOServer } from "socket.io";
 import { registerSocketHandlers } from "./socket/socketHandler.ts";
 import healthRouter from "./routes/health.ts";
 import gridRouter from "./routes/grid.ts";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 export async function createServer() {
   // 1. Initialize Express app
@@ -24,7 +27,7 @@ export async function createServer() {
 
   const io = new SocketIOServer(httpServer, {
     cors: {
-      origin: "http://localhost:3000", 
+      origin: process.env.FRONTEND_BASE_URL, 
     },
   });
 
