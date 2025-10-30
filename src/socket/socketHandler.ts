@@ -7,7 +7,7 @@ import {
   updateGridCell,
   markPlayerSubmitted,
   hasPlayerSubmitted,
-} from "../services/redisService.ts";
+} from "../services/redisService.js";
 
 // ✅ Track active socket connections per playerId
 const playerConnections = new Map<string, Set<string>>();

@@ -3,9 +3,9 @@ import express from "express";
 import http from "http";
 import cors from "cors";
 import { Server as SocketIOServer } from "socket.io";
-import { registerSocketHandlers } from "./socket/socketHandler.ts";
-import healthRouter from "./routes/health.ts";
-import gridRouter from "./routes/grid.ts";
+import { registerSocketHandlers } from "./socket/socketHandler.js";
+import healthRouter from "./routes/health.js";
+import gridRouter from "./routes/grid.js";
 import dotenv from "dotenv";
 
 dotenv.config();

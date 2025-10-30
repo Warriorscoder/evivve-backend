@@ -1,6 +1,6 @@
 // src/services/redisService.ts
 import { Redis } from "@upstash/redis";
-import { GRID_SIZE } from "../utils/constants.ts";
+import { GRID_SIZE } from "../utils/constants.js";
 import dotenv from "dotenv";
 
 // --- Redis client setup ---

@@ -1,6 +1,6 @@
 import pkg from 'express';
 const { Router} = pkg;
-import { getGridState } from "../services/redisService.ts";
+import { getGridState } from "../services/redisService.js";
 
 const router = Router();
 
