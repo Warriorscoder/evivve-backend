@@ -27,7 +27,7 @@ export async function createServer() {
 
   const io = new SocketIOServer(httpServer, {
     cors: {
-      origin: process.env.FRONTEND_BASE_URL, 
+      origin: '*', 
     },
   });
 
