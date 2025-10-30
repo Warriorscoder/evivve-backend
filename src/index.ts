@@ -1,6 +1,6 @@
 // src/index.ts
 import dotenv from "dotenv";
-import { createServer } from "./server.ts";
+import { createServer } from "./server.js";
 
 dotenv.config();
 
